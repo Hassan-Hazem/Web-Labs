@@ -63,9 +63,6 @@ function App() {
         value={rating}
         onChange={(e) => {
           let newRating = Number(e.target.value);
-
-          // This is the fix:
-          // Manually check if the number is outside the 0-5 range
           if (newRating > 5) {
             newRating = 5;
           } else if (newRating < 0) {
