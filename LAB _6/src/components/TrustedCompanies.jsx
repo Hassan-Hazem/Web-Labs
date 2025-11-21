@@ -1,6 +1,6 @@
-import React from 'react';
-
-export default function TrustedCompanies() {
+// Trusted Companies Section - Shows company logos
+function TrustedCompanies() {
+  // Array of company names
   const companies = [
     'Volkswagen',
     'Samsung',
@@ -15,16 +15,24 @@ export default function TrustedCompanies() {
   return (
     <section className="trusted-companies-section">
       <div className="trusted-inner">
-        <p className="trusted-text">Trusted by over 17,000 companies and millions of learners around the world</p>
+        {/* Section Text */}
+        <p className="trusted-text">
+          Trusted by over 17,000 companies and millions of learners around the world
+        </p>
+        
+        {/* Company Logos - Loop through companies array */}
         <div className="company-logos">
-          {companies.map((name, idx) => (
-            <div key={idx} className="company-logo" aria-label={name}>
-              {/* In a real app this would be an <img> with src */}
-              <span className="logo-placeholder">{name}</span>
-            </div>
-          ))}
+          {companies.map(function(name, index) {
+            return (
+              <div key={index} className="company-logo">
+                <span className="logo-placeholder">{name}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
 }
+
+export default TrustedCompanies;

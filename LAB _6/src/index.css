@@ -565,9 +565,83 @@ a {
 /* Footer */
 .site-footer {
   background-color: #1c1d1f;
-  padding: 40px 24px;
+  padding: 40px 24px 24px;
   color: #fff;
-  text-align: center;
+}
+
+.footer-inner {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #3e4143;
+  margin-bottom: 24px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-link {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #c0c4fc;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer-copyright {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-settings {
+  margin-left: auto;
+}
+
+.footer-language {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* Main Content Wrapper */
@@ -612,5 +686,13 @@ a {
   
   .company-logos {
     gap: 20px;
+  }
+  
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-bottom {
+    flex-wrap: wrap;
   }
 }
