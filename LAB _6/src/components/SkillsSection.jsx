@@ -1,6 +1,4 @@
-// Skills Section - Shows different skill categories
 function SkillsSection() {
-  // Array of skill categories
   const categories = [
     { id: 1, title: 'Generative AI', learners: '1M+' },
     { id: 2, title: 'IT Certifications', learners: '14.4M+' },
@@ -10,13 +8,11 @@ function SkillsSection() {
   return (
     <section className="skills-section">
       <div className="skills-inner">
-        {/* Section Title and Description */}
         <div className="skills-intro">
           <h2>Learn essential career and life skills</h2>
           <p>Udemy helps you build in-demand skills fast and advance your career in a changing job market.</p>
         </div>
         
-        {/* Cards Grid - Loop through categories */}
         <div className="skills-cards">
           {categories.map(function(cat) {
             return (

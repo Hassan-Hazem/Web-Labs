@@ -1,6 +1,4 @@
-// Course List Section - Shows available courses
 function CourseList() {
-  // Array of courses with details
   const courses = [
     {
       id: 1,
@@ -43,13 +41,11 @@ function CourseList() {
   return (
     <section className="course-list-section">
       <div className="course-list-inner">
-        {/* Section Title */}
         <h2>Skills to transform your career and life</h2>
         <p className="course-list-sub">
           From critical skills to technical topics, Udemy supports your professional development.
         </p>
 
-        {/* Category Tabs */}
         <div className="course-tabs">
           <button className="tab-btn active">Artificial Intelligence (AI)</button>
           <button className="tab-btn">Python</button>
@@ -59,7 +55,6 @@ function CourseList() {
           <button className="tab-btn">Amazon AWS</button>
         </div>
 
-        {/* Course Cards - Loop through courses array */}
         <div className="course-cards">
           {courses.map(function(course) {
             return (
@@ -80,7 +75,6 @@ function CourseList() {
           })}
         </div>
 
-        {/* Show All Link */}
         <a href="#" className="show-all-link">Show all Artificial Intelligence (AI) courses →</a>
       </div>
     </section>

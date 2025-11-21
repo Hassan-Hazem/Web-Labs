@@ -1,12 +1,9 @@
-// Header Component - Top navigation bar
 function Header() {
   return (
     <header className="header-container">
       <div className="header-inner">
-        {/* Logo */}
         <div className="logo">Udemy</div>
         
-        {/* Navigation Links */}
         <nav className="nav">
           <a className="nav-link" href="#">Explore</a>
           <a className="nav-link" href="#">Plans & Pricing</a>
@@ -14,12 +11,10 @@ function Header() {
           <a className="nav-link" href="#">Teach on Udemy</a>
         </nav>
         
-        {/* Search Bar */}
         <div className="search-bar">
           <input type="text" placeholder="Search for anything" className="search-input" />
         </div>
         
-        {/* Login and Signup Buttons */}
         <div className="auth-buttons">
           <button className="btn login">Log in</button>
           <button className="btn signup">Sign up</button>

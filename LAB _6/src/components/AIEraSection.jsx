@@ -1,6 +1,4 @@
-// AI Era Section - Dark section promoting AI learning
 function AIEraSection() {
-  // Array of benefits
   const benefits = [
     'Learn AI and more',
     'Practice with AI coaching',
@@ -11,7 +9,6 @@ function AIEraSection() {
   return (
     <section className="ai-era-section">
       <div className="ai-era-inner">
-        {/* Left side - Text and benefits */}
         <div className="ai-era-content">
           <h2>Reimagine your career in the AI era</h2>
           <p>
@@ -19,7 +16,6 @@ function AIEraSection() {
             of fresh content from real-world experts.
           </p>
           
-          {/* Benefits List - Loop through benefits array */}
           <ul className="ai-benefits">
             {benefits.map(function(benefit, index) {
               return <li key={index} className="benefit-item">{benefit}</li>;
@@ -30,7 +26,6 @@ function AIEraSection() {
           <p className="pricing-info">Starting at £E204.00/month</p>
         </div>
         
-        {/* Right side - Visual placeholder */}
         <div className="ai-era-visual">[Visual collage placeholder]</div>
       </div>
     </section>

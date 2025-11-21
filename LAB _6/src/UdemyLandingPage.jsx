@@ -1,4 +1,3 @@
-// Import all the section components
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import SkillsSection from './components/SkillsSection';
@@ -7,11 +6,9 @@ import CourseList from './components/CourseList';
 import TrustedCompanies from './components/TrustedCompanies';
 import Footer from './components/Footer';
 
-// Main component that puts everything together
 function UdemyLandingPage() {
   return (
     <div className="udemy-landing-page">
-      {/* Promotional Banner at the top */}
       <div className="promo-banner">
         <div className="promo-content">
           <span className="promo-text">
@@ -22,10 +19,8 @@ function UdemyLandingPage() {
         <button className="btn-redeem">Click to redeem</button>
       </div>
       
-      {/* Header Component */}
       <Header />
       
-      {/* Main Content - All sections */}
       <main className="main-content">
         <HeroSection />
         <SkillsSection />
@@ -34,7 +29,6 @@ function UdemyLandingPage() {
         <TrustedCompanies />
       </main>
       
-      {/* Footer Component */}
       <Footer />
     </div>
   );
